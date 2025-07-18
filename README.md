@@ -1,90 +1,84 @@
+# ✈️ Airlines Customer Satisfaction - End-to-End ML App using AWS
 
-# ✈️ Airlines Customer Satisfaction Predictor 🎯
-
-Welcome aboard! 🛫  
-This project is your **co-pilot** in predicting how satisfied passengers are with their flight experience using machine learning! 💻🧠
+This project is an end-to-end machine learning solution to predict airline customer satisfaction. It includes model training, Streamlit web app deployment, and hosting on AWS EC2 with CI/CD using GitHub Actions.
 
 ---
 
-## 🚀 Run This App Locally
+## 🚀 Features
 
-Wanna test it on your machine? Here's how! 💡
+- Streamlit frontend UI for predictions.
+- Logistic Regression model trained on cleaned dataset.
+- Deployment on AWS EC2 using GitHub Actions.
+- Real-time predictions based on user inputs.
 
-### 🧰 1. Clone the Repository
+---
+
+## 🧠 Machine Learning Model
+
+- **Algorithm**: Logistic Regression  
+- **Training Accuracy**: ~85%  
+- **Metrics Used**: Accuracy, Confusion Matrix
+
+---
+
+## 🛠️ Tech Stack
+
+- Python, Pandas, NumPy
+- Scikit-learn
+- Streamlit
+- AWS EC2
+- GitHub Actions for CI/CD
+
+---
+
+## 🧪 How to Run the App Locally
 
 ```bash
 git clone https://github.com/vishald018/AIRLINES-CUSTOMER-SATISFACTION-AWS.git
-cd AIRLINES-CUSTOMER-SATISFACTION-AWS
-````
-
-### 📦 2. Set Up Your Environment
-
-Make sure Python is installed ✅
-Then install all required libraries:
-
-```bash
-pip install -r requirements.txt
-```
-
-### 🧠 3. Run the Streamlit App
-
-Navigate to the `APP` folder and run:
-
-```bash
 cd APP
+pip install -r requirements.txt
 streamlit run app.py
-```
-
-Your browser should open automatically 🌐
-If not, go to: `http://localhost:8501`
+````
 
 ---
 
-## ☁️ Want to Deploy It on AWS?
+## ☁️ Deployment (CI/CD + AWS EC2)
 
-You're in luck! 🍀
-Steps to deploy this app on **AWS EC2** are clearly explained inside the `APP` folder’s README file:
-📁 `APP/README.md`
+* EC2 instance setup with SSH.
+* GitHub Actions triggers deployment on push.
+* App automatically restarts using `nohup` + `streamlit`.
 
-Go check it out and take your project live! 🛰️
+---
+
+## 🖼️ App Interface
+
+<p float="left">
+  <img src="https://github.com/vishald018/AIRLINES-CUSTOMER-SATISFACTION-AWS/blob/main/APP/interface1.jpg?raw=true" width="700" />
+  <img src="https://github.com/vishald018/AIRLINES-CUSTOMER-SATISFACTION-AWS/blob/main/APP/interface2.jpg?raw=true" width="700" />
+</p>
 
 ---
 
 ## 📂 Project Structure
 
 ```
-AIRLINES-CUSTOMER-SATISFACTION-AWS/
-├── APP/
+├── APP
 │   ├── app.py
-│   ├── models/
-│   ├── utils/
-│   └── README.md 👈 AWS deployment guide
-├── NOTEBOOK/
-│   └── EDA & Model Training.ipynb
-├── DATASET/
-│   └── airline.csv
-├── requirements.txt
-└── .gitignore
+│   ├── model.pkl
+│   ├── requirements.txt
+│   └── interface1.jpg, interface2.jpg
+├── .github
+│   └── workflows
+│       └── deploy.yml
+├── dataset.csv
+├── EC2_setup.md
+└── README.md
 ```
 
 ---
 
-## 🧑‍💻 Built With
+## ✍️ Author
 
-* 🐍 Python
-* 🌟 Streamlit
-* 📊 LightGBM
-* 🧹 Pandas, NumPy, Seaborn
-* ❤️ Love for clean ML apps
+Made with ❤️ by Vishal
+GitHub: [vishald018](https://github.com/vishald018)
 
----
-
-Made with ❤️ by [Vishal](https://github.com/vishald018)
-🛬 Thanks for flying with our ML model! Hope you had a satisfying experience. 😄
-
-```
-
----
-
-✅ Now you can safely copy this and paste it directly into your `README.md` file. Let me know if you want a similar AWS deployment guide too.
-```
