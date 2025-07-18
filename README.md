@@ -15,9 +15,9 @@ This project is an end-to-end machine learning solution to predict airline custo
 
 ## 🧠 Machine Learning Model
 
-- **Algorithm**: Logistic Regression  
+- **Algorithm**: LightGBM or Light Gradient Boosting Machine
 - **Training Accuracy**: ~95%  
-- **Metrics Used**: Accuracy, Confusion Matrix
+- **Metrics Used**: Accuracy , R2 SCORE
 
 ---
 
@@ -27,7 +27,6 @@ This project is an end-to-end machine learning solution to predict airline custo
 - Scikit-learn
 - Streamlit
 - AWS EC2
-- GitHub Actions for CI/CD
 
 ---
 
