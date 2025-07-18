@@ -16,7 +16,7 @@ This project is an end-to-end machine learning solution to predict airline custo
 ## 🧠 Machine Learning Model
 
 - **Algorithm**: Logistic Regression  
-- **Training Accuracy**: ~85%  
+- **Training Accuracy**: ~95%  
 - **Metrics Used**: Accuracy, Confusion Matrix
 
 ---
